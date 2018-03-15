@@ -1,2 +1,2 @@
-# YouTubeAdAway
-Xposed module to block YouTube ads on the official YouTube apps (+TV, Music, Games, Kids, Go)
+# Swap navigation button
+An Xposed module to swap navigation buttons (Back/Recent) on Stock Android Nougat and above.
