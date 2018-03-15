@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ma.wanam.swapnavbar"
+    android:versionCode="10"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="26" />
+
+    <application
+        android:allowBackup="true"
+        android:directBootAware="true"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Dialog">
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="40+" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="Swap navigation bar by Wanam" />
+
+        <activity
+            android:name="ma.wanam.swapnavbar.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="de.robv.android.xposed.category.MODULE_SETTINGS" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
